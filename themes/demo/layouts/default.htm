@@ -4,15 +4,21 @@ description = "Default layout"
 <html>
     <head>
         <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>BestBuyNepal - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+        
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/css/uikit.min.css" />
+
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/styles.css'|theme }}" rel="stylesheet">
+
         {% styles %}
     </head>
     <body>
@@ -33,6 +39,11 @@ description = "Default layout"
         </footer>
 
         <!-- Scripts -->
+        
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.6/dist/js/uikit-icons.min.js"></script>
+
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>

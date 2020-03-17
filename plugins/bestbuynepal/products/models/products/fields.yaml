@@ -1,0 +1,37 @@
+fields:
+    name:
+        label: 'Product Name'
+        span: auto
+        type: text
+    mrp:
+        label: MRP
+        span: auto
+        type: number
+    price:
+        label: Price
+        span: auto
+        type: number
+    description:
+        label: 'Product Description'
+        span: auto
+        type: text
+    image:
+        label: 'Product Image'
+        mode: file
+        span: auto
+        type: mediafinder
+    bestbuy:
+        label: 'BestBuy From'
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: Name
+                    span: auto
+                    type: text
+                price:
+                    label: Price
+                    span: auto
+                    type: number

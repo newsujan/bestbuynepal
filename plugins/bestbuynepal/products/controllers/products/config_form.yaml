@@ -1,0 +1,10 @@
+name: Products
+form: $/bestbuynepal/products/models/products/fields.yaml
+modelClass: Bestbuynepal\Products\Models\Products
+defaultRedirect: bestbuynepal/products/products
+create:
+    redirect: 'bestbuynepal/products/products/update/:id'
+    redirectClose: bestbuynepal/products/products
+update:
+    redirect: bestbuynepal/products/products
+    redirectClose: bestbuynepal/products/products
